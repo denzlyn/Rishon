@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    sans-serif;
+  background-color: #09090b;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+/* Off-black background, off-white text - no pure #000/#fff. */
+::selection {
+  background-color: rgba(245, 176, 65, 0.35);
+}
