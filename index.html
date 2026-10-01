@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Taqniat | Software engineering, Abu Dhabi</title>
+  <meta name="description" content="Taqniat designs, builds and supports secure, high-availability software from Abu Dhabi. Custom applications, support, skilled engineers and consultancy." />
+  <meta name="theme-color" content="#0B0D10" />
+  <meta property="og:title" content="Taqniat | Software engineering, Abu Dhabi" />
+  <meta property="og:description" content="Secure, high-availability software. Designed, built and supported in Abu Dhabi." />
+  <meta property="og:image" content="/og.jpg" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="/posters/hero.webp" media="(min-width: 921px)" fetchpriority="high" />
+  <link rel="preload" as="image" href="/posters/hero-portrait.webp" media="(max-width: 920px)" fetchpriority="high" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Navigation -->
+  <header class="nav" data-nav>
+    <div class="nav__bar">
+      <a class="brand" href="#top" aria-label="Taqniat home">
+        <span class="brand__mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand__word">Taqniat</span>
+        <span class="brand__ar" lang="ar" aria-hidden="true">تقنيات</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <span class="nav__indicator" aria-hidden="true"></span>
+        <a href="#services" data-section="services">Services</a>
+        <a href="#architecture" data-section="architecture">Architecture</a>
+        <a href="#work" data-section="work">Work</a>
+        <a href="#industries" data-section="industries">Industries</a>
+        <a href="#company" data-section="company">Company</a>
+      </nav>
+      <a class="btn btn--primary btn--sm nav__cta magnetic" href="#contact"><span>Start a project</span></a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span data-icon="list"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="sheet" id="mobile-menu" hidden>
+    <nav aria-label="Mobile">
+      <a href="#services">Services</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#work">Work</a>
+      <a href="#industries">Industries</a>
+      <a href="#company">Company</a>
+      <a class="btn btn--primary" href="#contact"><span>Start a project</span></a>
+    </nav>
+  </div>
+
+  <main id="main">
+
+    <!-- 1. Hero -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__stage" aria-hidden="true">
+        <picture>
+          <source media="(max-width: 920px)" srcset="/posters/hero-portrait.webp" width="780" height="1500" />
+          <img class="hero__poster" src="/posters/hero.webp" alt="" width="1600" height="1000" fetchpriority="high" />
+        </picture>
+        <canvas class="hero__canvas" data-hero-canvas></canvas>
+        <ol class="hero__labels" data-hero-labels>
+          <li data-layer="0"><span>Interface</span></li>
+          <li data-layer="1"><span>Application</span></li>
+          <li data-layer="2"><span>Integration</span></li>
+          <li data-layer="3"><span>Data</span></li>
+          <li data-layer="4"><span>Infrastructure</span></li>
+        </ol>
+      </div>
+      <div class="hero__content wrap">
+        <h1 class="hero__title" id="hero-title">
+          <span class="line"><span>Software for systems</span></span>
+          <span class="line"><span>that can't stop.</span></span>
+        </h1>
+        <p class="hero__sub">Taqniat designs, builds and supports secure, high-availability software in Abu Dhabi. From architecture to day-to-day operation.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary magnetic" href="#contact"><span>Start a project</span><span data-icon="arrow-right"></span></a>
+          <a class="btn btn--ghost" href="#architecture"><span>See how we build</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Overview -->
+    <section class="overview" aria-labelledby="overview-title">
+      <div class="wrap overview__inner depth">
+        <h2 class="visually-hidden" id="overview-title">About Taqniat</h2>
+        <p class="overview__statement">
+          We're an Abu Dhabi engineering company of <em>85+ software professionals</em>.
+          We build products and custom systems here, then stay to run them. The interface your people use,
+          the data underneath it and the infrastructure it lives on are <em>one job</em> to us, not three handovers.
+        </p>
+        <dl class="overview__facts">
+          <div><dt>Team</dt><dd>85+ engineers, analysts and specialists</dd></div>
+          <div><dt>Where</dt><dd>Built and supported locally, in Abu Dhabi</dd></div>
+          <div><dt>Scope</dt><dd>Interface to infrastructure, first sketch to support</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 3. Services -->
+    <section class="services" id="services" aria-labelledby="services-title" data-services>
+      <div class="services__pin">
+        <div class="wrap services__grid">
+          <div class="services__copy">
+            <h2 class="h2" id="services-title">One partner for the whole life of a system.</h2>
+            <div class="services__tabs" role="tablist" aria-label="Services">
+              <button role="tab" id="tab-build" aria-controls="svc-build" aria-selected="true" data-svc="0">Build</button>
+              <button role="tab" id="tab-support" aria-controls="svc-support" aria-selected="false" data-svc="1" tabindex="-1">Support</button>
+              <button role="tab" id="tab-staff" aria-controls="svc-staff" aria-selected="false" data-svc="2" tabindex="-1">Staff</button>
+              <button role="tab" id="tab-advise" aria-controls="svc-advise" aria-selected="false" data-svc="3" tabindex="-1">Advise</button>
+            </div>
+            <div class="services__panels">
+              <article class="svc is-active" id="svc-build" role="tabpanel" aria-labelledby="tab-build" data-svc-panel="0">
+                <h3>Custom software, built around how you actually work.</h3>
+                <p>We design and build applications to your requirements: portals, case management, internal tools, integrations. Tested from the first sprint.</p>
+                <ul>
+                  <li>Discovery and architecture</li>
+                  <li>Web, mobile and portal interfaces</li>
+                  <li>APIs and system integration</li>
+                  <li>Automated QA from day one</li>
+                </ul>
+              </article>
+              <article class="svc" id="svc-support" role="tabpanel" aria-labelledby="tab-support" data-svc-panel="1">
+                <h3>We keep what we deliver running.</h3>
+                <p>Support doesn't end at go-live. The team that built your system monitors it, maintains it and fixes it, under agreed service levels.</p>
+                <ul>
+                  <li>SLA-based application support</li>
+                  <li>Monitoring and incident response</li>
+                  <li>Upgrades, patching and maintenance</li>
+                  <li>Performance and database tuning</li>
+                </ul>
+              </article>
+              <article class="svc" id="svc-staff" role="tabpanel" aria-labelledby="tab-staff" data-svc-panel="2">
+                <h3>The right engineers, when you need them.</h3>
+                <p>Skilled IT people placed with your team, matched to the role and backed by Taqniat. On site or remote, for a project or for the long term.</p>
+                <ul>
+                  <li>Developers, DBAs and system engineers</li>
+                  <li>QA and test automation specialists</li>
+                  <li>Project and delivery managers</li>
+                  <li>Scale up or down as work changes</li>
+                </ul>
+              </article>
+              <article class="svc" id="svc-advise" role="tabpanel" aria-labelledby="tab-advise" data-svc-panel="3">
+                <h3>Clear advice before you commit.</h3>
+                <p>We review how your IT works today and help you choose the right technology for what comes next, so you don't pay for the wrong decision twice.</p>
+                <ul>
+                  <li>IT process review</li>
+                  <li>Technology selection</li>
+                  <li>Architecture and high-availability design</li>
+                  <li>Modernisation roadmaps</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+          <div class="prism-stage" aria-hidden="true">
+            <div class="prism" data-prism>
+              <div class="prism__face" style="--i:0">
+                <span data-icon="code" class="prism__icon"></span>
+                <span class="prism__name">Build</span>
+                <span class="prism__meta">Design, develop, test</span>
+              </div>
+              <div class="prism__face" style="--i:1">
+                <span data-icon="lifebuoy" class="prism__icon"></span>
+                <span class="prism__name">Support</span>
+                <span class="prism__meta">Monitor, maintain, fix</span>
+              </div>
+              <div class="prism__face" style="--i:2">
+                <span data-icon="users-three" class="prism__icon"></span>
+                <span class="prism__name">Staff</span>
+                <span class="prism__meta">Match, place, back</span>
+              </div>
+              <div class="prism__face" style="--i:3">
+                <span data-icon="compass" class="prism__icon"></span>
+                <span class="prism__name">Advise</span>
+                <span class="prism__meta">Review, select, plan</span>
+              </div>
+              <div class="prism__cap prism__cap--top"></div>
+              <div class="prism__cap prism__cap--bottom"></div>
+            </div>
+            <div class="prism-shadow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Architecture -->
+    <section class="arch" id="architecture" aria-labelledby="arch-title" data-arch>
+      <div class="wrap arch__head">
+        <p class="eyebrow">How we build</p>
+        <h2 class="h2" id="arch-title">Every layer of the system, in one team.</h2>
+        <p class="lede">Pick a layer to see what we do there and what it depends on.</p>
+      </div>
+      <div class="arch__body wrap">
+        <div class="arch__stage">
+          <picture>
+            <source media="(max-width: 640px)" srcset="/posters/architecture-portrait.webp" width="800" height="1000" />
+            <img class="arch__poster" src="/posters/architecture.webp" alt="" width="1600" height="1000" loading="lazy" aria-hidden="true" />
+          </picture>
+          <canvas class="arch__canvas" data-arch-canvas aria-hidden="true"></canvas>
+          <div class="arch__tags" data-arch-tags aria-hidden="true"></div>
+        </div>
+        <div class="arch__nodes" role="tablist" aria-label="System layers" data-arch-list>
+          <button role="tab" data-node="people" aria-selected="false" tabindex="-1"><span data-icon="user-circle"></span>People</button>
+          <button role="tab" data-node="interface" aria-selected="false" tabindex="-1"><span data-icon="devices"></span>Interface</button>
+          <button role="tab" data-node="application" aria-selected="true"><span data-icon="app-window"></span>Application</button>
+          <button role="tab" data-node="integration" aria-selected="false" tabindex="-1"><span data-icon="plugs"></span>Integration</button>
+          <button role="tab" data-node="data" aria-selected="false" tabindex="-1"><span data-icon="database"></span>Data</button>
+          <button role="tab" data-node="analytics" aria-selected="false" tabindex="-1"><span data-icon="chart-line-up"></span>Analytics</button>
+          <button role="tab" data-node="infrastructure" aria-selected="false" tabindex="-1"><span data-icon="hard-drives"></span>Infrastructure</button>
+          <button role="tab" data-node="security" aria-selected="false" tabindex="-1"><span data-icon="shield-check"></span>Security</button>
+          <button role="tab" data-node="operations" aria-selected="false" tabindex="-1"><span data-icon="pulse"></span>Operations</button>
+        </div>
+        <div class="arch__panels" aria-live="polite">
+          <article class="node-panel" data-panel="people" role="tabpanel" hidden>
+            <h3>People</h3>
+            <p>Citizens, customers, staff, operators. We start every project with who uses the system and what they need to get done.</p>
+            <ul class="node-panel__list"><li>User research and journey mapping</li><li>Accessibility and Arabic/English support</li><li>Role-based access design</li></ul>
+            <p class="node-panel__tech"><span>Links to</span></p>
+          </article>
+          <article class="node-panel" data-panel="interface" role="tabpanel" hidden>
+            <h3>Interface</h3>
+            <p>The web portals, mobile apps and internal tools people touch every day. Fast, clear and consistent across devices.</p>
+            <ul class="node-panel__list"><li>Web and mobile UI development</li><li>Self-service portals</li><li>Design systems for long-lived products</li></ul>
+            <p class="node-panel__tech"><span>Links to</span></p>
+          </article>
+          <article class="node-panel" data-panel="application" role="tabpanel">
+            <h3>Application</h3>
+            <p>The business logic: case management, workflows, approvals, records. Custom-built so it fits the process instead of bending it.</p>
+            <ul class="node-panel__list"><li>Custom application development</li><li>Workflow and case management</li><li>Modernising legacy applications</li></ul>
+            <p class="node-panel__tech"><span>Links to</span></p>
+          </article>
+          <article class="node-panel" data-panel="integration" role="tabpanel" hidden>
+            <h3>Integration</h3>
+            <p>Systems rarely live alone. We connect them through APIs and event streams so data moves once, reliably.</p>
+            <ul class="node-panel__list"><li>API design and gateways</li><li>Event streaming with Kafka</li><li>Integration with government and third-party platforms</li></ul>
+            <p class="node-panel__tech"><span>Links to</span></p>
+          </article>
+          <article class="node-panel" data-panel="data" role="tabpanel" hidden>
+            <h3>Data</h3>
+            <p>Where we go deepest. Databases designed to stay available through failures, with real-time replication between sites.</p>
+            <ul class="node-panel__list"><li>Oracle RAC and high-availability design</li><li>Oracle GoldenGate replication</li><li>MongoDB for document workloads</li></ul>
+            <p class="node-panel__tech"><span>Links to</span></p>
+          </article>
+          <article class="node-panel" data-panel="analytics" role="tabpanel" hidden>
+            <h3>Analytics</h3>
+            <p>Turning operational data into reporting and insight, at a scale where ordinary databases slow down.</p>
+            <ul class="node-panel__list"><li>Hadoop data platforms</li><li>Spark processing pipelines</li><li>Dashboards and reporting</li></ul>
+            <p class="node-panel__tech"><span>Links to</span></p>
+          </article>
+          <article class="node-panel" data-panel="infrastructure" role="tabpanel" hidden>
+            <h3>Infrastructure</h3>
+            <p>On-premise, cloud or both. We engineer the servers, networks and environments the software runs on.</p>
+            <ul class="node-panel__list"><li>Systems engineering</li><li>On-premise, cloud and hybrid environments</li><li>Disaster recovery between sites</li></ul>
+            <p class="node-panel__tech"><span>Links to</span></p>
+          </article>
+          <article class="node-panel" data-panel="security" role="tabpanel" hidden>
+            <h3>Security</h3>
+            <p>Not a layer you add at the end. Access control, hardening and audit are designed into every other layer.</p>
+            <ul class="node-panel__list"><li>Secure architecture review</li><li>Identity and access control</li><li>Hardening and audit trails</li></ul>
+            <p class="node-panel__tech"><span>Links to</span></p>
+          </article>
+          <article class="node-panel" data-panel="operations" role="tabpanel" hidden>
+            <h3>Operations</h3>
+            <p>Testing, releasing and keeping it running. The same team that built the system watches over it.</p>
+            <ul class="node-panel__list"><li>QA and test automation</li><li>Release management</li><li>Monitoring, maintenance and support</li></ul>
+            <p class="node-panel__tech"><span>Links to</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Engineering -->
+    <section class="eng" aria-labelledby="eng-title">
+      <div class="wrap depth">
+        <h2 class="h2 eng__title" id="eng-title">Six disciplines.<br />One delivery team.</h2>
+        <div class="eng__clusters">
+          <div class="cluster cluster--lead">
+            <h3>Build</h3>
+            <dl>
+              <div><dt>Software engineering</dt><dd>Back-end services, business logic and integrations, written to be maintained for years.</dd></div>
+              <div><dt>UI development</dt><dd>Interfaces for web and mobile that stay fast and readable on any device.</dd></div>
+            </dl>
+          </div>
+          <div class="cluster">
+            <h3>Assure</h3>
+            <dl>
+              <div><dt>QA automation</dt><dd>Automated test suites that run on every change.</dd></div>
+              <div><dt>Maintenance</dt><dd>Patching, upgrades and fixes on live systems.</dd></div>
+            </dl>
+          </div>
+          <div class="cluster">
+            <h3>Run</h3>
+            <dl>
+              <div><dt>Systems engineering</dt><dd>Servers, networks and environments.</dd></div>
+              <div><dt>Project management</dt><dd>Plans, risks and delivery you can track.</dd></div>
+            </dl>
+          </div>
+        </div>
+        <div class="stack">
+          <h3 class="stack__title">What we run in production</h3>
+          <ul class="stack__list">
+            <li class="stack__item stack__item--text"><span class="stack__word">ORACLE</span><span class="stack__sub">RAC, GoldenGate, high availability</span></li>
+            <li class="stack__item"><span data-logo="apachekafka"></span><span class="stack__sub">Kafka</span></li>
+            <li class="stack__item"><span data-logo="mongodb"></span><span class="stack__sub">MongoDB</span></li>
+            <li class="stack__item"><span data-logo="apachehadoop"></span><span class="stack__sub">Hadoop</span></li>
+            <li class="stack__item"><span data-logo="apachespark"></span><span class="stack__sub">Spark</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Work
+         CONTENT PLACEHOLDER: these three projects are representative examples written
+         from Taqniat's public technology profile. Replace with real, approved case studies. -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <h2 class="h2 work__title" id="work-title">Selected work</h2>
+        <div class="work__list">
+
+          <article class="plate" data-plate>
+            <div class="plate__scene" aria-hidden="true">
+              <div class="plate__stack">
+                <div class="layer" style="--z:3"><span>Citizen portal</span></div>
+                <div class="layer" style="--z:2"><span>Service bus</span></div>
+                <div class="layer layer--accent" style="--z:1"><span>Case management</span></div>
+                <div class="layer" style="--z:0"><span>Oracle RAC</span></div>
+              </div>
+            </div>
+            <div class="plate__body">
+              <p class="plate__sector">Government</p>
+              <h3>One front door for public services</h3>
+              <p>Services spread across several older systems were brought behind a single bilingual portal, with a shared case-management core and an integration layer that let each back-office system stay in place.</p>
+              <dl class="plate__meta">
+                <div><dt>We did</dt><dd>Architecture, build, integration, support</dd></div>
+                <div><dt>Result</dt><dd>One portal and one case record instead of several</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="plate plate--flip" data-plate>
+            <div class="plate__scene" aria-hidden="true">
+              <div class="plate__stack">
+                <div class="layer" style="--z:3"><span>Operations apps</span></div>
+                <div class="layer layer--accent" style="--z:2"><span>GoldenGate</span></div>
+                <div class="layer" style="--z:1"><span>Primary site</span></div>
+                <div class="layer" style="--z:0"><span>Standby site</span></div>
+              </div>
+            </div>
+            <div class="plate__body">
+              <p class="plate__sector">Energy and utilities</p>
+              <h3>Data that keeps up across two sites</h3>
+              <p>A 24/7 operation needed its core database to survive the loss of a data centre. We designed real-time replication to a standby site and rehearsed failover until it was routine.</p>
+              <dl class="plate__meta">
+                <div><dt>We did</dt><dd>HA design, replication, DR testing</dd></div>
+                <div><dt>Result</dt><dd>A tested, documented path through site failure</dd></div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="plate" data-plate>
+            <div class="plate__scene" aria-hidden="true">
+              <div class="plate__stack">
+                <div class="layer" style="--z:3"><span>Dashboards</span></div>
+                <div class="layer layer--accent" style="--z:2"><span>Spark</span></div>
+                <div class="layer" style="--z:1"><span>Hadoop</span></div>
+                <div class="layer" style="--z:0"><span>Kafka ingest</span></div>
+              </div>
+            </div>
+            <div class="plate__body">
+              <p class="plate__sector">Telecommunications</p>
+              <h3>Operational data, ready by morning</h3>
+              <p>Usage data arriving faster than the reporting database could handle moved onto a streaming pipeline and a Hadoop and Spark platform, so daily reports stopped running into the next day.</p>
+              <dl class="plate__meta">
+                <div><dt>We did</dt><dd>Data platform, pipelines, reporting</dd></div>
+                <div><dt>Result</dt><dd>Reports ready at the start of the working day</dd></div>
+              </dl>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Industries
+         CONTENT PLACEHOLDER: confirm the sectors Taqniat actually serves. -->
+    <section class="ind" id="industries" aria-labelledby="ind-title" data-industries>
+      <div class="wrap ind__grid depth">
+        <div>
+          <h2 class="h2" id="ind-title">Where reliability isn't optional</h2>
+          <div class="ind__list" role="tablist" aria-label="Industries">
+            <button role="tab" aria-selected="true" data-ind="0">Government</button>
+            <button role="tab" aria-selected="false" data-ind="1" tabindex="-1">Energy and utilities</button>
+            <button role="tab" aria-selected="false" data-ind="2" tabindex="-1">Banking and finance</button>
+            <button role="tab" aria-selected="false" data-ind="3" tabindex="-1">Healthcare</button>
+            <button role="tab" aria-selected="false" data-ind="4" tabindex="-1">Telecommunications</button>
+          </div>
+        </div>
+        <div class="ind__detail">
+          <div class="ind__panel is-active" role="tabpanel" data-ind-panel="0">
+            <p class="ind__lead">Public services that work the first time, in Arabic and English, with data kept in the country.</p>
+            <ul><li>Citizen and business portals</li><li>Case and records management</li><li>Integration between entities</li></ul>
+          </div>
+          <div class="ind__panel" role="tabpanel" data-ind-panel="1" hidden>
+            <p class="ind__lead">Operational systems that run around the clock and can't lose data when a site goes down.</p>
+            <ul><li>High-availability databases</li><li>Cross-site replication</li><li>Asset and field operations software</li></ul>
+          </div>
+          <div class="ind__panel" role="tabpanel" data-ind-panel="2" hidden>
+            <p class="ind__lead">Transaction systems where every record has to be right, auditable and available.</p>
+            <ul><li>Core system integration</li><li>Audit and compliance reporting</li><li>Secure internal applications</li></ul>
+          </div>
+          <div class="ind__panel" role="tabpanel" data-ind-panel="3" hidden>
+            <p class="ind__lead">Clinical and administrative systems that need to share data without exposing it.</p>
+            <ul><li>Patient and appointment systems</li><li>Integration between providers</li><li>Role-based access to records</li></ul>
+          </div>
+          <div class="ind__panel" role="tabpanel" data-ind-panel="4" hidden>
+            <p class="ind__lead">High volumes of data that have to be processed, stored and reported on every day.</p>
+            <ul><li>Streaming data pipelines</li><li>Big data platforms</li><li>Operational dashboards</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Why Taqniat -->
+    <section class="why" id="company" aria-labelledby="why-title" data-why>
+      <div class="wrap">
+        <h2 class="h2 why__title" id="why-title">Why organisations stay with us</h2>
+        <div class="why__planes">
+          <article class="why__plane" style="--d:0">
+            <span class="why__n">01</span>
+            <h3>Built here</h3>
+            <p>Our engineers are in Abu Dhabi. The people who design your system are the people you meet, and your data doesn't need to leave the country.</p>
+          </article>
+          <article class="why__plane" style="--d:1">
+            <span class="why__n">02</span>
+            <h3>Secure by design</h3>
+            <p>Access, hardening and audit are part of the architecture from the first diagram, not a review at the end.</p>
+          </article>
+          <article class="why__plane" style="--d:2">
+            <span class="why__n">03</span>
+            <h3>Built to stay up</h3>
+            <p>High availability is our specialism. We plan for the failure before it happens and test that the plan works.</p>
+          </article>
+          <article class="why__plane" style="--d:3">
+            <span class="why__n">04</span>
+            <h3>The whole lifecycle</h3>
+            <p>Advice, build, people and support from one team. Nothing gets lost between suppliers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__floor" aria-hidden="true"><div></div></div>
+      <div class="wrap contact__grid">
+        <div class="contact__copy">
+          <h2 class="contact__title" id="contact-title">Have a system to build, or one that has to keep running?</h2>
+          <p class="lede">Tell us what you are working on and where you are stuck. We will take it from there.</p>
+          <ul class="contact__direct">
+            <li><span data-icon="phone"></span><a href="tel:+97124147333">+971 2 414 7333</a></li>
+            <li><span data-icon="map-pin"></span><span>Sheikh Rashid Bin Saeed St, Abu Dhabi, UAE</span></li>
+          </ul>
+        </div>
+        <form class="form" novalidate data-form>
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" autocomplete="name" required />
+            <p class="field__error" id="f-name-err" hidden>Please add your name.</p>
+          </div>
+          <div class="field">
+            <label for="f-email">Work email</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required />
+            <p class="field__error" id="f-email-err" hidden>Please add an email we can reply to.</p>
+          </div>
+          <div class="field">
+            <label for="f-org">Organisation</label>
+            <input id="f-org" name="organisation" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="f-msg">What do you need?</label>
+            <textarea id="f-msg" name="message" rows="4" required aria-describedby="f-msg-help"></textarea>
+            <p class="field__help" id="f-msg-help">A few lines is enough. A new system, support for an existing one, engineers, or advice.</p>
+            <p class="field__error" id="f-msg-err" hidden>Tell us a little about the project.</p>
+          </div>
+          <button class="btn btn--primary magnetic" type="submit"><span>Start a project</span><span data-icon="arrow-right"></span></button>
+          <p class="form__status" role="status" data-form-status></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <span class="footer__ar" lang="ar">تقنيات</span>
+        <p>Software engineering for systems that can't stop. Abu Dhabi, UAE.</p>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#work">Work</a>
+        <a href="#industries">Industries</a>
+        <a href="#company">Company</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__contact">
+        <a href="tel:+97124147333">+971 2 414 7333</a>
+        <span>Sheikh Rashid Bin Saeed St, Abu Dhabi</span>
+      </div>
+      <p class="footer__legal">© <span data-year>2026</span> Taqniat. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
