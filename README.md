@@ -13,6 +13,8 @@ npm run preview   # serve the build
 
 The output in `dist/` is static and can be hosted anywhere.
 
+`npx vite build --mode concept` makes a preview build that's clearly labelled as a design concept: a notice at the bottom, "Example project" on the case studies, and a form that says it isn't connected. Use it for sharing previews until the real content is in.
+
 ## How it's put together
 
 - `index.html` holds all the content. Everything reads and works without JavaScript or WebGL.

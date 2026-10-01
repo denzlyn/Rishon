@@ -247,6 +247,10 @@ export function initForm() {
       status.textContent = 'A couple of fields need attention.';
       return;
     }
+    if (import.meta.env.MODE === 'concept') {
+      status.textContent = 'This is a design concept, so the form isn\'t connected yet. Call +971 2 414 7333 to reach Taqniat.';
+      return;
+    }
     const org = form.elements.organisation.value.trim();
     const subject = `Project enquiry${org ? ` from ${org}` : ''}`;
     const body = `${fields.message.value.trim()}\n\n${fields.name.value.trim()}\n${fields.email.value.trim()}${org ? `\n${org}` : ''}`;

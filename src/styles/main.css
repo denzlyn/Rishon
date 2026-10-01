@@ -673,3 +673,15 @@ body.menu-open .nav__bar { background: transparent !important; border-color: tra
 .poster-mode .nav, .poster-mode .hero__content, .poster-mode .hero__labels, .poster-mode .arch__tags { visibility: hidden; }
 .poster-mode .hero__poster, .poster-mode .arch__poster { display: none; }
 .poster-mode .hero__canvas, .poster-mode .arch__canvas { transition: none; }
+
+/* Concept builds only (vite --mode concept) */
+.concept-note {
+  position: fixed; left: 50%; bottom: calc(14px + env(safe-area-inset-bottom, 0px)); z-index: 45;
+  translate: -50% 0;
+  width: max-content; max-width: calc(100% - 32px);
+  margin: 0; padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--surface-2); border: 1px solid var(--line-2);
+  color: var(--text-2); font-size: 0.8rem; line-height: 1.4; text-align: center;
+  box-shadow: 0 12px 30px -12px rgb(0 0 0 / 0.7);
+}
