@@ -189,8 +189,9 @@ export function initHero(canvas, { tier, reduced, labels, onSelect }) {
     const halfH = Math.tan(fovR) * dist;
     const halfW = halfH * aspect;
     layout = wide
-      ? { x: halfW * 0.4, y: halfH * 0.04, scale: 0.8 }
-      : { x: 0, y: halfH * 0.3, scale: 0.95 };
+      // narrower landscape screens (tablets, small laptops) get a smaller stack so the labels fit
+      ? { x: halfW * (w < 1200 ? 0.36 : 0.4), y: halfH * 0.04, scale: THREE.MathUtils.clamp(w / 1800, 0.6, 0.8) }
+      : { x: 0, y: halfH * 0.3, scale: aspect > 0.65 ? 0.8 : 0.95 };
   }
 
   function placeLabels() {
@@ -211,6 +212,8 @@ export function initHero(canvas, { tier, reduced, labels, onSelect }) {
       const sx = (best.x * 0.5 + 0.5) * w + 18;
       const sy = (-best.y * 0.5 + 0.5) * h;
       labels[i].style.transform = `translate(${sx.toFixed(1)}px, ${sy.toFixed(1)}px) translateY(-50%)`;
+      // never let a label run off the edge of the screen
+      labels[i].style.visibility = sx + labels[i].offsetWidth > w - 16 ? 'hidden' : '';
       labels[i].classList.toggle('is-hot', hovered === i);
     });
   }

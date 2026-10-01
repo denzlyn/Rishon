@@ -107,7 +107,7 @@ export function initArchitecture(canvas, { tier, reduced, tagsEl, onPick }) {
     // on tall screens the board turns so the flow runs top to bottom
     world.rotation.y = portrait ? -Math.PI / 2 : 0;
     const fovR = THREE.MathUtils.degToRad(camera.fov / 2);
-    const span = portrait ? 9.4 : 17.6; // width of board we need on screen, with room for perspective
+    const span = portrait ? 9.4 : 18.2; // width of board we need on screen, with room for perspective
     // portrait also has to fit the board's length vertically
     const fitW = span / 2 / (Math.tan(fovR) * aspect);
     const dist = portrait ? Math.max(fitW, 8.4 / Math.tan(fovR) * 0.95) : Math.max(12, fitW);
@@ -162,7 +162,7 @@ export function initArchitecture(canvas, { tier, reduced, tagsEl, onPick }) {
     if (selected) {
       v.copy(selected.g.position);
       world.localToWorld(v);
-      const pull = portrait ? 0.1 : 0.25;
+      const pull = portrait ? 0.1 : 0.12;
       lookTarget.set(v.x * pull, 0, v.z * pull);
     } else {
       lookTarget.set(0, 0, 0);
